@@ -3,12 +3,12 @@ const server = require("websocket").server;
 
 const port = process.env.PORT || 1337;
 const httpServer = http.createServer(() => {});
-httpServer.listen(port, () => {
-  console.log("Server listening at port" + port);
-});
 
 const wsServer = new server({
   httpServer,
+});
+httpServer.listen(port, () => {
+  console.log("Server listening at port : " + port);
 });
 
 const peersByCode = {};
