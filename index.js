@@ -2,7 +2,11 @@ const http = require("http");
 const server = require("websocket").server;
 
 const port = process.env.PORT || 1337;
-const httpServer = http.createServer(() => {});
+const httpServer = http.createServer(function (request, response) {
+  console.log(new Date() + " Received request for " + request.url);
+  response.writeHead(404);
+  response.end();
+});
 
 const wsServer = new server({
   httpServer: httpServer,
