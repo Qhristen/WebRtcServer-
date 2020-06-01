@@ -7,7 +7,7 @@ httpServer.listen(1337, () => {
 });
 
 const wsServer = new server({
-  httpServer
+  httpServer,
 });
 
 const peersByCode = {};
