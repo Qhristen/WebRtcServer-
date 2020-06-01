@@ -21,11 +21,12 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qhristen/WebRtcServer-.git"
+    "url": "git+https://git.heroku.com/web-cam-web.git"
   },
   "keywords": [],
   "author": "",
